@@ -1,7 +1,7 @@
 # @Author: Jiang Guoxi
 # @Date:   2016-07-14 14:13:12
 # @Last Modified by:   Jiang Guoxi
-# @Last Modified time: 2016-07-14 14:30:52
+# @Last Modified time: 2016-07-14 14:34:56
 # 原生bash不支持简单的数学运算，但是可以通过其他命令来实现，例如 awk 和 expr，expr 最常用。
 # Notice:
 #  * 表达式与运算符之间要有空格
@@ -48,3 +48,12 @@ if [ $a -ge $c ]
 else
   echo 'a is less than c';
 fi;
+
+echo ------------------- 布尔运算符 ------------------------;
+
+# ! [非]   -o [或]   -a [与]
+default_commit_message=':smirk:';
+if [ $1 ]
+  then default_commit_message=$1;
+fi;
+echo $default_commit_message;
