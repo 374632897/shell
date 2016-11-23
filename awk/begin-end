@@ -1,0 +1,3 @@
+BEGIN { print "begin"}
+{print $1 "aiyowodegequ"}
+END {print "END OF FILE"}

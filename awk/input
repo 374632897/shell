@@ -1,0 +1,4 @@
+#! /bin/bash
+gawk '{
+$4="testing"
+print $0}'
