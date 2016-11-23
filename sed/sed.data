@@ -1,0 +1,12 @@
+  691  basedir
+ 1011  mkdir sed
+ 1015  echo "This is a big test" | sed 's/test/big test/'
+ 1016  cd ./sed
+ 1036  history | grep "sed"
+ 1039  sed -e 's/quick/slow/' 's/dog/cat/' data
+ 1040  sed -e 's/quick/slow/;s/dog/cat/' data
+ 1041  sed -e 
+ 1042  sed -e '
+ 1044  sed -e '
+ 1045  sed -e '
+ 1046  history | grep 'sed' > sed.data
